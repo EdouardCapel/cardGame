@@ -1,0 +1,14 @@
+<h1>All Cards</h1>
+<div class='PC-Index'>
+  <ul class='list-inline'>
+    <% @cards.each do |card| %>
+      <li>
+        <div class='playingCard'>
+          <p class='value-upperleft'> <%= card.value.name %> </p>
+          <p class='value-lowerright'> <%= card.value.name %> </p>
+          <p class='color-center'> <%= card.color.name %> </p>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
